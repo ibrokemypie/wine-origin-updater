@@ -7,7 +7,7 @@ UPDATEPATH=""
 update() {
     local DIR="$1"
     if which aria2c; then
-        command="aria2c -x8 -c"
+        command="aria2c -x8 -c --no-conf=true"
     else
         command="wget"
     fi
